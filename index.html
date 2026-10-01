@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحي اللاتيني - تلخيص شامل</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Reem+Kufi:wght@700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;background:linear-gradient(135deg,#0f0c29 0%,#302b63 40%,#8B1E3F 75%,#C7372F 100%);font-family:'Amiri',serif;display:flex;justify-content:center;padding:25px}
+.container{width:100%;max-width:850px;text-align:center}
+.welcome-box{background:rgba(255,255,255,.15);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.3);border-radius:22px;padding:42px 25px;margin-bottom:30px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.welcome-box h1{font-family:'Reem Kufi',sans-serif;font-size:2.5em;color:#ffe4ec;line-height:1.4;min-height:90px}
+.welcome-box p{color:#e9d8ff;font-size:1.2em;margin-top:10px;min-height:28px}
+.stage{display:none;justify-content:center}
+.stage.show{display:flex;animation:fade .9s ease}
+@keyframes fade{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.parchment{width:100%;max-width:740px;min-height:120px;background:#fdf6e3;background-image:radial-gradient(ellipse at top,rgba(139,90,43,.12) 0%,transparent 70%);border-radius:12px;box-shadow:0 0 0 1px #d4c5a0,0 0 0 5px #fdf6e3,0 25px 50px rgba(0,0,0,.7),inset 0 0 80px rgba(139,90,43,.15);padding:75px 45px;position:relative;transform:scaleY(.1);max-height:80px;overflow:hidden;transition:transform 1.6s cubic-bezier(.34,1.56,.64,1),max-height 2.5s ease}
+.parchment.open{transform:scaleY(1);max-height:15000px}
+.parchment::before,.parchment::after{content:'';position:absolute;left:-8px;right:-8px;height:32px;background:linear-gradient(to bottom,#e8d5a3,#c9b07a,#a68a5b);border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.parchment::before{top:-16px}.parchment::after{bottom:-16px}
+.content{color:#3e2f1c;font-size:1.15em;line-height:2.1;text-align:justify;opacity:0;transition:opacity 1s ease 1s}
+.parchment.open .content{opacity:1}
+.content h2{font-family:'Reem Kufi',sans-serif;color:#5a1a2e;text-align:center;margin-bottom:20px;border-bottom:2px dashed #c9a86a;padding-bottom:12px;font-size:1.6em}
+.content h3{font-family:'Reem Kufi',sans-serif;color:#8B1E3F;margin-top:25px;margin-bottom:10px;text-align:right}
+#txt{white-space:pre-wrap;font-weight:700}
+.cursor{display:inline-block;width:3px;height:1.15em;background:#8B1E3F;animation:blink .8s infinite;vertical-align:bottom}
+@keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
+.quote{text-align:center;margin-top:22px;font-weight:700;color:#8B1E3F;background:rgba(139,30,63,.12);padding:14px;border-radius:10px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="welcome-box"><h1 id="h1"></h1><p id="h2"></p></div>
+<div class="stage" id="stage"><div class="parchment" id="par"><div class="content">
+<h2>رواية الحي اللاتيني - سهيل إدريس - تلخيص شامل</h2>
+<div id="txt"></div><span class="cursor" id="cur"></span>
+<div id="qt" style="display:none" class="quote">"إنه حي يفكر دائما، ويحب دائما، ويشك دائما - حي لا ينام"<br>سهيل إدريس</div>
+</div></div></div>
+</div>
+<script>
+const title="أهلاً وسهلاً بأستاذي الكريم وزملائي الأعزاء";
+const sub="أقدم لكم اليوم تلخيصي الشامل لرواية الحي اللاتيني";
+const body=`مقدمة عن الرواية:
+رواية "الحي اللاتيني" للكاتب اللبناني سهيل إدريس، صدرت سنة 1953 وتعتبر من أهم الروايات العربية التي عالجت موضوع الصراع بين الشرق والغرب. وهي رواية سيرة ذاتية تحكي قصة شاب عربي يذهب للدراسة في باريس.
+
+الشخصيات الرئيسية:
+1- سامي: هو البطل والراوي، شاب لبناني من بيروت، محافظ ومتدين في البداية، يمثل الشاب العربي التقليدي الذي تربى على قيم الشرق.
+2- جانين: فتاة فرنسية طالبة في السوربون، جميلة ومثقفة ومتحررة، تمثل الغرب بكل حريته وتناقضاته، وهي حب سامي الأول.
+3- أصدقاء الحي: مجموعة من الطلبة العرب والأجانب الذين يعيشون نفس الصراع.
+
+ملخص الأحداث:
+تبدأ الرواية بسفر سامي من بيروت إلى باريس لإكمال دراسته العليا في الأدب في جامعة السوربون. عندما يصل، يسكن في الحي اللاتيني، الحي الطلابي العريق.
+
+في البداية، يصاب سامي بصدمة حضارية قوية. كل شيء مختلف: اختلاط الجنسين في الجامعة والمقاهي، حرية العلاقات، النقاش المفتوح في الدين والسياسة والجنس بدون خوف. كان سامي يرى أن هذا انحلال.
+
+يتعرف سامي على جانين في الجامعة. في البداية كان ينفر منها لأنها متحررة، لكنه شيئا فشيئا يقع في حبها. جانين تعلمه كيف يفكر بحرية، تأخذه إلى المتاحف والمسارح والمقاهي الأدبية في سان ميشال.
+
+تتطور علاقتهما إلى حب عميق وجسدي. هنا يبدأ الصراع الداخلي الكبير عند سامي: بين تربيته الشرقية التي تقول أن هذا حرام، وبين قلبه وعقله الجديد الذي يقول أن الحب حرية. يعيش تمزقا رهيبا بين قيمتين.
+
+وصف الحي اللاتيني في الرواية:
+يصف الكاتب الحي اللاتيني وصفا دقيقا جدا:
+
+- ماديا: هو حي قديم جدا في الضفة اليسرى لنهر السين، حول جامعة السوربون. أزقة ضيقة، مباني حجرية عتيقة، مكتبات قديمة تبيع الكتب المستعملة على الأرصفة، مقاهي أدبية تاريخية يجلس فيها الطلبة ليل نهار يناقشون الفلسفة والأدب. حي فقير بوهيمي تفوح منه رائحة القهوة والتبغ والورق القديم.
+
+- معنويا: هو رمز للحرية الفكرية المطلقة. إنه ليس مجرد مكان، بل هو جامعة ثانية. في هذا الحي، الطالب يتعلم كيف يشك، كيف يحب، كيف يفكر بدون قيود. هو المكان الذي يتحطم فيه الشرق القديم ويولد فيه إنسان جديد. قال عنه الكاتب: "إنه حي يفكر دائما، ويحب دائما، ويشك دائما".
+
+التحول الفكري للبطل:
+مع مرور الوقت، يتحول سامي من شاب محافظ يصلي ويخاف من المرأة، إلى شاب متحرر يدافع عن حرية المرأة وعن الحب. يبدأ يقرأ لفرويد وسارتر، ويناقش زملاءه في مواضيع كانت محرمة عنده. الحي اللاتيني غيره تماما.
+
+النهاية والرسالة:
+في نهاية الرواية، يفترق سامي وجانين لأن سامي يجب أن يعود إلى لبنان. يعود سامي وهو شخص آخر تماما. لم يعد ذلك الشاب الساذج. عاد وهو يحمل فكرين في رأس واحد: فكر الشرق وفكر الغرب. عاد ليصارع مجتمعه بنفس الأفكار التي تعلمها في الحي اللاتيني.
+
+الرسالة التي أراد الكاتب إيصالها هي أن النهضة العربية الحقيقية لن تكون إلا بالانفتاح على الفكر الغربي الحر، مع الحفاظ على أصالتنا، وأن الصراع بين الشرق والغرب هو صراع داخل كل شاب عربي مثقف.
+
+أسلوب الكاتب:
+اعتمد سهيل إدريس أسلوبا واقعيا تحليليا، يغوص في نفسية البطل بعمق، ولغة أدبية جميلة تجمع بين العربية الفصحى الراقية وبعض العبارات العامية الباريسية، مما جعل الرواية صادقة ومؤثرة جدا.
+`;
+
+function type(el,txt,sp,cb,follow=false){
+  let i=0;el.textContent='';
+  (function l(){
+    if(i<txt.length){
+      el.textContent+=txt[i++];
+      if(follow){
+        document.getElementById('cur').scrollIntoView({behavior:'auto',block:'end'});
+      }
+      setTimeout(l,sp);
+    } else if(cb) cb();
+  })();
+}
+
+function start(){
+  type(document.getElementById('h1'),title,110,()=>{
+    setTimeout(()=>{type(document.getElementById('h2'),sub,75,()=>{
+      setTimeout(()=>{
+        const s=document.getElementById('stage'),p=document.getElementById('par');
+        s.classList.add('show');
+        setTimeout(()=>{
+          p.classList.add('open');
+          setTimeout(()=>{
+            type(document.getElementById('txt'),body,30,()=>{
+              document.getElementById('qt').style.display='block';
+              document.getElementById('cur').style.display='none';
+            },true);
+          },600)
+        },150)
+      },800)
+    })},300)
+  })
+}
+window.onload=start;
+</script>
+</body>
+  </html>
